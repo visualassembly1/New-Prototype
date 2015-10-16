@@ -23,6 +23,6 @@ public class PCmovement : MonoBehaviour
             transform.Translate(new Vector3(0, 1, 0)*movespeed);
     
         if(Input.GetKey(KeyCode.DownArrow))
-            transform.Translate(new Vector3(0, -2, 0)*movespeed);
+            transform.Translate(new Vector3(0, -1, 0)*movespeed);
     }
 }
