@@ -40,7 +40,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        float horizontal = Input.GetAxis("Horizontal");
+
+        float horizontal = (Input.GetAxis("Horizontal"));
 
         HandleMovement(horizontal);
 
@@ -54,6 +55,7 @@ public class Player : MonoBehaviour
     //Handles the movement of the player
     private void HandleMovement(float horizontal)
     {
+
         //Checks if current animation is playing
         //animation on layer 0
         if (!this.myAnimator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
